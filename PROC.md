@@ -27,6 +27,10 @@ Then parse the file using the following command:
 cat result.scrape | grep -E "<a href=/subdomain/edit\.php\?edit_domain_id=[0-9]{1,}>[-.a-zA-Z0-9]{1,}</a>" --only-matching | sed -n -E "s/.*edit_domain_id=[0-9]{1,}>(.*)<\/a>.*/\1/p"|sort | uniq | grep -E "[-.0-9a-zA-Z]{1,}\.(ml|ga|gq|cf|tk)" -v |sed -n 's/$/, fsp/p'
 ```
 
+### NOTE (IMPORTANR)
+
+It's not a good practice to go after those that are not very famous. So we select only those that have more than 1,000 subdomains.
+
 
 
 
