@@ -24,6 +24,6 @@ Type of service provider (second column) is one of the following:
 4. fss: File Sharing Service
 5. csp: Cloud Service Provider
 6. fpp: Free Page Provider
-
+7. tss: Text Sharing Service
 
 Feel free to open an issue for updating the list!
